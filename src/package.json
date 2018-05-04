@@ -1,0 +1,25 @@
+{
+  "name": "drawingapp",
+  "version": "1.0.0",
+  "description": "Small-responsive web app",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify scripts/app.js -o ../build/js/bundle.js",
+    "watch": "watchify scripts/app.js -o ../build/js/bundle.js"
+  },
+  "author": "Bojan Markovic",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.0",
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1",
+    "grunt-postcss": "^0.9.0",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.4.1"
+  }
+}
